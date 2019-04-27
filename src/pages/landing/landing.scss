@@ -1,0 +1,30 @@
+page-landing {
+  .sliderImage {
+    margin-top: 38%;
+    height: 89px;
+  }
+
+  .scroll-content {
+    overflow-y: hidden;
+  }
+  h1 {
+    text-align: center;
+    padding: 15px!important;
+    color: #a5a58e;
+    font-size: 39px!important;
+  }
+  h2 {
+    padding: 43px!important;
+    text-align: center;
+    color: #bb9ca1;
+  }
+  h6 {
+    text-align: center;
+    padding: 30px!important;
+    margin-top: 20px!important;
+    color: #c7c7ad;
+  }
+  .landingUpper {
+    background-image: url("https://image.freepik.com/free-photo/water-background-with-splashes_23-2147608335.jpg");
+  }
+}

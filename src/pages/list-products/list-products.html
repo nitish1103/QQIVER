@@ -1,0 +1,22 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title *ngIf="paramsDataAvailable">
+      <ion-icon name="arrow-round-back" (click)="gotToDasboard()"></ion-icon>
+      {{paramsData.moveToLocation.description}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+
+<ion-content *ngIf="paramsDataAvailable">
+  <ion-list>
+    <button ion-item *ngFor="let product of productsList" (click)="onProductSelect(product)">
+      <h2>
+        {{ product.product.productId }}
+      </h2>
+      <p>
+        {{ product.product.productName }}
+      </p>
+    </button>
+  </ion-list>
+</ion-content>

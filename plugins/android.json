@@ -1,0 +1,40 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "co.hotwax.stockmove",
+      "ANDROID_SCHEME": "co.hotwax.stockmove",
+      "ANDROID_HOST": "qa-ware2goproject.auth0.com",
+      "ANDROID_PATHPREFIX": "/cordova/co.hotwax.stockmove/callback",
+      "PACKAGE_NAME": "co.hotwax.stockmove"
+    }
+  },
+  "dependent_plugins": {}
+}

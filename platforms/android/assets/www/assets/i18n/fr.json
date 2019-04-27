@@ -1,0 +1,30 @@
+{
+<<<<<<< HEAD
+=======
+
+>>>>>>> 28ac3cad145d576eead785913e9c363bd33569f4
+  "Login":"S'identifier",
+  "Logout":"Connectez - Out",
+  "Home":"Accueil",
+  "Username":"Nom d'utilisateur",
+  "Password":"Mot de passe",
+  "promptTitle":"URL du locataire",
+  "promptMessage":"Entrez le nom de l'instance. Ne pas entrer l'URL complète, il suffit d'entrer le nom de l'instance",
+  "url":"url",
+  "cancel":"Annuler",
+  "save":"sauvegarder",
+  "loadingMsg":"Se connecter...",
+  "tenantUrlRequired":"Veuillez entrer l'URL du locataire avant de vous connecter",
+<<<<<<< HEAD
+  "welcome":"Connectez-vous avec succès"
+=======
+  "welcome":"Connectez-vous avec succès",
+  "UserProfileTitle":"Profil de l'utilisateur",
+  "Role":"Rôle",
+  "ResetPassword":"réinitialiser le mot de passe",
+  "Menu":"Menu",
+  "Profile":"Profil"
+>>>>>>> 28ac3cad145d576eead785913e9c363bd33569f4
+
+}
+

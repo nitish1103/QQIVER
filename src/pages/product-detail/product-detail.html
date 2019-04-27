@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ facilityName }}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="gotToDasboard()" class="custom">
+        Done
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+  <ion-card col-lg-5 col-sm-10 col-10>
+    <ion-card-header text-center>
+      <ion-icon name="copy"></ion-icon> Count Log
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label floating>Location Id</ion-label>
+        <ion-input type="text" #location ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>SKU ID</ion-label>
+        <ion-input type="text" #sku></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Quantity</ion-label>
+        <ion-input type="text" #quantity></ion-input>
+      </ion-item>
+      <ion-buttons text-center>
+        <button ion-button (click)="saveLocation(quantity.value, sku.value, location.value)" [disabled]="!sku.value || !quantity.value || !location.value">
+          SAVE
+        </button>
+      </ion-buttons>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

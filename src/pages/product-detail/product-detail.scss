@@ -1,0 +1,30 @@
+page-product-detail {
+  ion-card {
+    margin:auto!important;
+    margin-top: 10px!important;
+  }
+  ion-item {
+    margin-bottom: 15px !important;
+  }
+
+  ion-card-header {
+    font-size: 25px!important;
+    font-weight: 400;
+  }
+}
+
+.custom {
+  color: white!important;
+}
+
+.success-toast {
+  > div{
+    background-color:#32db64!important;
+  }
+}
+
+.error-toast {
+  > div{
+    background-color:#ff0000 !important;
+  }
+}

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: center">
+      The Prezent
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content>
+  <ion-card col-lg-3 offset-lg-4 col-md-6 offset-md-3>
+    <ion-card-header style="border-bottom: none!important;">
+      <ion-card-title style="text-align: center">
+        Welcome to <strong>The Prezent</strong>
+        <p style="opacity: .6">Login to get perzonalized experience</p>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control"  placeholder="Email Id" autocomplete="off" autofocus="off">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control"  placeholder="Password" autocomplete="off" autofocus="off">
+        </div>
+      </form>
+      <ion-grid>
+        <button ion-button (click)="loginSSO()" style="background-color: #d83f87;">CONTINUE</button>
+      </ion-grid>
+    </ion-card-content>
+    <div style="text-align: center">
+      <h2>OR</h2>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button style="background-color: #4267b2;margin-left: 15px;"> Login with FB</button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button style="background-color: #D44638;"> Login with G+</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
+<ion-footer style="text-align: center;padding: 20px; cursor: pointer">
+  <a (click)="goToDashboard()">SKIP</a>
+</ion-footer>

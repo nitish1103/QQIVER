@@ -1,0 +1,196 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle class="custom">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="margin-left: -32px;">
+      The Prezent
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="appstore"></ion-icon>
+      </button>
+      <button ion-button>
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <!--<div class="search-bar-wrapper">
+    <ion-searchbar
+      #productQuery
+      [(ngModel)]="productId"
+      placeholder="Search"
+    >
+    </ion-searchbar>
+  </div>-->
+</ion-header>
+
+<ion-menu [content]="mycontent">
+  <ion-content>
+    <div class="title">
+      <img [src]="userLogo" height="60" style="margin: 5px;">
+      <ion-grid>
+        <ion-row style="margin-left: 2px;margin-top: -1px;margin-bottom: -13px;font-size: 16px;">
+          <ion-col col-11>
+            <strong><a (click)="goToLogin()">Log In</a> . <a>Sign Up</a></strong>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <ion-list no-lines style="border-bottom: 1px solid grey;">
+      <button ion-item (click)="addCount()">
+        Cakes
+        <ion-icon name="arrow-dropright" style="float: right;"></ion-icon>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        Flowers
+        <ion-icon name="arrow-dropright" style="float: right;"></ion-icon>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        My Combos
+        <ion-icon name="arrow-dropright" style="float: right;"></ion-icon>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        Personalized
+        <ion-icon name="arrow-dropright" style="float: right;"></ion-icon>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        Soft Toys
+        <ion-icon name="arrow-dropright" style="float: right;"></ion-icon>
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        Chocolates
+        <ion-icon name="arrow-dropright" style="float: right;"></ion-icon>
+      </button>
+    </ion-list>
+    <hr>
+    <ion-list no-lines style="border-bottom: 1px solid grey;">
+      <button ion-item (click)="addCount()">
+        <ion-icon name="briefcase"></ion-icon>
+        Wishlist
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="reorder"></ion-icon>
+        Orders
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        <ion-icon name="person"></ion-icon>
+        Account
+      </button>
+    </ion-list>
+    <hr>
+    <ion-list no-lines style="border-bottom: 1px solid grey;">
+      <button ion-item (click)="addCount()">
+        FAQs
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        Contact Us
+      </button>
+      <button ion-item (click)="ionViewDidLoad()">
+        More
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mycontent [root]=""></ion-nav>
+
+<ion-content>
+  <ion-row class="slider">
+    <ion-col col-4>
+      <ion-card>
+        <img [src]="cakeImage">
+        <p style="text-align: center">Cakes</p>
+      </ion-card>
+    </ion-col>
+    <ion-col col-4>
+      <ion-card>
+        <img [src]="flowerImage">
+        <p style="text-align: center">Flowers</p>
+      </ion-card>
+    </ion-col>
+    <ion-col col-4>
+      <ion-card>
+        <img [src]="giftImage">
+        <p style="text-align: center">Gifts</p>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <hr>
+  <ion-card class="category">
+    <span class="categoryName">
+      Cakes
+    </span>
+    <img [src]="cakeCategoryImage">
+    <ion-item class="offer" text-center>
+      MIN 20% OFF
+      <p style="margin-top: 5px;"><a>SHOP NOW</a></p>
+    </ion-item>
+  </ion-card>
+  <ion-card class="category">
+    <span class="categoryName">
+      Flowers
+    </span>
+    <img [src]="flowerCategoryImage">
+    <ion-item class="offer" text-center>
+      MIN 20% OFF
+      <p style="margin-top: 5px;"><a>SHOP NOW</a></p>
+    </ion-item>
+  </ion-card>
+  <ion-card class="category">
+    <span class="categoryName">
+      My Combos
+    </span>
+    <img [src]="combosCategoryImage">
+    <ion-item class="offer" text-center>
+      MIN 20% OFF
+      <p style="margin-top: 5px;"><a>SHOP NOW</a></p>
+    </ion-item>
+  </ion-card>
+  <ion-row class="deal-row">
+    <div class="deal">
+      Deals of the day
+      <span class="timer">23H 23M 23S</span>
+    </div>
+  </ion-row>
+  <ion-card>
+    <ion-card-title>Category Store</ion-card-title>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+            <ion-card>
+              <img [src]="cakeImage">
+              <p style="text-align: center">Cakes</p>
+            </ion-card>
+          </ion-col>
+          <ion-col col-3>1.2</ion-col>
+          <ion-col col-3>1.3</ion-col>
+          <ion-col col-3>1.4</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3>2.1</ion-col>
+          <ion-col col-3>2.2</ion-col>
+          <ion-col col-3>2.3</ion-col>
+          <ion-col col-3>2.4</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3>3.1</ion-col>
+          <ion-col col-3>3.2</ion-col>
+          <ion-col col-3>3.3</ion-col>
+          <ion-col col-3>3.4</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-3>4.1</ion-col>
+          <ion-col col-3>4.2</ion-col>
+          <ion-col col-3>4.3</ion-col>
+          <ion-col col-3>4.4</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
