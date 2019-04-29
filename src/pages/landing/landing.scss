@@ -1,22 +1,36 @@
 page-landing {
   .sliderImage {
-    margin-top: 38%;
-    height: 89px;
+    left: 38%;
+    position: absolute;
+    width: 25%;
+    margin: auto;
+    top: 35%;
   }
-
+  .image-text{
+      left: 39%;
+      position: absolute;
+      top: 60%;
+      font-size: 24px;
+      font-family: cursive;
+      color: #27248a;
+      font-weight: bold;
+  }
+  ion-item[no-lines]{
+  background-color: #3E4166!important;height: 50%;
+  }
   .scroll-content {
     overflow-y: hidden;
   }
   h1 {
     text-align: center;
-    padding: 15px!important;
     color: #a5a58e;
-    font-size: 39px!important;
+    font-size: 3.6rem !important;
   }
-  h2 {
+  h2 pre{
     padding: 43px!important;
     text-align: center;
     color: #bb9ca1;
+    font-size: 2.6rem !important;
   }
   h6 {
     text-align: center;
@@ -25,6 +39,8 @@ page-landing {
     color: #c7c7ad;
   }
   .landingUpper {
-    background-image: url("https://image.freepik.com/free-photo/water-background-with-splashes_23-2147608335.jpg");
+    background-image: url(../../assets/imgs/bg.png);
+    height: 50%;
+    position: relative;
   }
 }

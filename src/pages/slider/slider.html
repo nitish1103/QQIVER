@@ -1,5 +1,5 @@
 <ion-content>
-  <ion-slides pager="true" style="height: 86%">
+  <ion-slides pager="true" style="height: 90%">
     <ion-slide>
       <img [src]="slider1" class="sliderImage">
       <h1 style="font-weight: 800">You Order</h1>
@@ -27,8 +27,6 @@
       <p>anywhere</p>
     </ion-slide>
   </ion-slides>
-  <ion-grid>
-    <button ion-button (click)="goToAreaCheck()">Next ></button>
-  </ion-grid>
+    <button ion-button bottom full (click)="goToAreaCheck()">Next ></button>
 </ion-content>
 

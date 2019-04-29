@@ -17,7 +17,7 @@ export class LandingPage {
   companyLogo : string;
   giftGif : string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.companyLogo =  'assets/imgs/QQIVER.jpeg';
+    this.companyLogo =  'assets/imgs/logo-blue.png';
     this.giftGif =  'https://acegif.com/wp-content/uploads/gift-42.gif';
   }
 
