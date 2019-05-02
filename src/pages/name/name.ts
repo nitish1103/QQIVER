@@ -23,4 +23,8 @@ export class NamePage {
     console.log('ionViewDidLoad NamePage');
   }
 
+  goToStore() {
+    this.navCtrl.setRoot('StorePage')
+  }
+
 }
