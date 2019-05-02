@@ -1,12 +1,21 @@
 page-login {
-  ion-card {
-    margin: auto!important;
-    margin-top: 10px!important;
+  ion-header .toolbar-background {
+    background-color: white !important;
+    color: black !important;
   }
-}
-.scroll-content {
-  overflow-y: hidden;
-}
-.form-control {
-  height: 43px;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .toolbar-title-md {
+    color: grey!important;
+    text-align: center;
+  }
+
+  .skip {
+    float:right;
+    font-size: 18px;
+    color: #9a4554!important;
+  }
 }

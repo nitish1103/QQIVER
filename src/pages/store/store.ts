@@ -2,24 +2,28 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ProductDetailPage page.
+ * Generated class for the StorePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({name:'StorePage'})
 @Component({
-  selector: 'page-product-detail',
-  templateUrl: 'product-detail.html',
+  selector: 'page-store',
+  templateUrl: 'store.html',
 })
-export class ProductDetailPage {
+export class StorePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProductDetailPage');
+    console.log('ionViewDidLoad StorePage');
   }
+
+    goToLogin() {
+      this.navCtrl.setRoot('LoginPage');
+    }
 
 }
