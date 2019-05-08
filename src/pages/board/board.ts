@@ -2,30 +2,30 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the BoardPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
-@IonicPage({name:'LoginPage'})
+@IonicPage({name:'Board'})
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-board',
+  templateUrl: 'board.html',
 })
-export class LoginPage {
+export class BoardPage {
 
-    backButton : string;
+    boatImage : string;
     constructor(public navCtrl: NavController, public navParams: NavParams) {
-        this.backButton = 'assets/imgs/img/backarrow.png';
+        this.boatImage = 'assets/imgs/img/board-profile-bitmap.png';
     }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+    console.log('ionViewDidLoad BoardPage');
   }
 
-  goToMenu() {
-      this.navCtrl.setRoot('StorePage');
-  }
+    goToChat() {
+        this.navCtrl.setRoot('ChatPage');
+    }
 
 }

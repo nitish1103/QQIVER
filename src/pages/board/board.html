@@ -1,0 +1,61 @@
+<ion-header text-center padding>
+  <h1>
+    boards
+  </h1>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row padding-left padding-right>
+      <ion-col col-3>
+        <img [src]="boatImage" height="100">
+      </ion-col>
+      <ion-col>
+        <h3>JS Surfboards 6’1 28L</h3>
+        <ion-buttons>
+          <button ion-button>Profile</button>
+          <button ion-button>Shop</button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <ion-grid>
+    <ion-row padding-left padding-right>
+      <ion-col col-3>
+        <img [src]="boatImage" height="100">
+      </ion-col>
+      <ion-col>
+        <h3>JS Surfboards 6’1 28L</h3>
+        <ion-buttons>
+          <button ion-button>Profile</button>
+          <button ion-button>Shop</button>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <ion-item no-lines>
+    Add Another Board
+  </ion-item>
+  <hr>
+</ion-content>
+<ion-footer padding-right>
+  <ion-row>
+    <ion-col col-1></ion-col>
+    <ion-col col-2>
+      <ion-icon name="home"></ion-icon>
+    </ion-col>
+    <ion-col col-2>
+      <ion-icon name="briefcase"></ion-icon>
+    </ion-col>
+    <ion-col col-2>
+      <ion-icon name="clipboard" (click)=goToBoard() class="active"></ion-icon>
+    </ion-col>
+    <ion-col col-2>
+      <ion-icon name="chatbubbles" (click)=goToChat()></ion-icon>
+    </ion-col>
+    <ion-col col-2>
+      <ion-icon name="contact" (click)=goToLogin()></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-footer>
