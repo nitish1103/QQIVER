@@ -1,0 +1,31 @@
+page-profile {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ion-footer ion-col {
+    padding: 21px!important;
+    border: none!important;
+
+  }
+
+  ion-footer ion-icon {
+    color: grey!important;
+    font-size: 26px;
+    opacity: .6;
+  }
+
+  ion-icon.active {
+    color: #9a4554!important;
+  }
+
+  ion-buttons {
+    background-color: white!important;
+    margin-top: 18px!important;
+  }
+  .button-md {
+    margin: 0px!important;
+    background-color: #989595!important;
+    border-radius: 11%;
+  }
+}
